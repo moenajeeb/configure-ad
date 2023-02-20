@@ -61,21 +61,13 @@ Now we can join Client-1 to the domain. Let's go back to the Azure Portal and se
 <p>
 </p>
 <p>
-We have to join Client-1 to the domain in order to do so navigate to your system settings and go to about. Off to the right select rename this pc (advanced). From there select to change the domain. Enter "mydomain.com" after that enter your credentials from mydomain.com\labuser. Your computer will restart and then client-1 will be a part of mydomain.com
-</p>
-<br />
-<p>
-  <p>
-<img src="https://i.imgur.com/Ze0Em5e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Wonderufl Client-1 is now a part of the domain. Now we will set up remote desktop for non-administrative users on Client-1. We have to log into Client-1 as an admin and open system properties. Click on "Remote Desktop", allow "domain users" access to remote desktop. After completing those steps you should be able to log into Client-1 as a normal user.
+We will continue by setting up remote desktop for non-administrative users on Client-1. Log into Client-1 as the admin and open system properties. Click on "Remote Desktop" and allow domain users access to the remote desktop. Now we are allowed to log into Client-1 as a non-administrative user now!
 </p>
 <br />
 
 <p>
   <p>
-<img src="https://i.imgur.com/SApOKiE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/81TINJg.png" height="80%"/>
 </p>
 <p>
 Lastly to verify that noraml users can RDP into Client-1 we will use a script to generate thousands of users into the domain. We will input the script in powershell, after the users are created we will select one and RDP into Client-1.
